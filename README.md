@@ -22,7 +22,7 @@ A estrutura dos objetos também é importante e por isso ficaram tudo na pasta
 ## Comandos
 
 - [ ] Instalação : Comando <b>npm install</b>
-- [ ] Execução : Comando <b>npm run start</b>
+- [ ] Execução : Comando <b>npm run start</b> <br/>
 O Comando acima abre também o nodemon
 
 A saída deve ser parecida com essa:
