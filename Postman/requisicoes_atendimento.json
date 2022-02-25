@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "a90d9760-1652-4dde-b97e-2297eecf603d",
+		"name": "curso node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post atendimento",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cliente",
+							"value": "Nome do Cliente",
+							"type": "text"
+						},
+						{
+							"key": "pet",
+							"value": "Nome do pet",
+							"type": "text"
+						},
+						{
+							"key": "servico",
+							"value": "tipo do serviço",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "agendado, finalizado",
+							"type": "text"
+						},
+						{
+							"key": "observacoes",
+							"value": "Observações sobre o agendamento",
+							"type": "text"
+						},
+						{
+							"key": "data",
+							"value": "20/02/2022",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/atendimentos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get atendimentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/atendimentos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/atendimentos/6",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patch atendimento",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cliente",
+							"value": "Nome do cliente alterado",
+							"type": "text"
+						},
+						{
+							"key": "pet",
+							"value": "nome do pet alterado",
+							"type": "text"
+						},
+						{
+							"key": "servico",
+							"value": "tosa",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "finalizado",
+							"type": "text"
+						},
+						{
+							"key": "observacoes",
+							"value": "Observações alterado",
+							"type": "text"
+						},
+						{
+							"key": "data",
+							"value": "23/02/2022",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/atendimentos/6",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete atendimento",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/atendimentos/6",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
